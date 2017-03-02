@@ -4,7 +4,7 @@
   "description": "Trying out a cool CI workflow using Docker, CircleCI to deploy a NodeJS app to AWS.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node --harmony ./node_modules/istanbul-harmony/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --harmony --use_strict --timeout 5000 --R spec --U exports test"
   },
   "author": "Lars Tijhuis",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "hapi": "^16.1.0",
     "istanbul": "^0.4.5",
     "istanbul-harmony": "^0.3.16",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "request": "^2.79.0"
   }
 }
