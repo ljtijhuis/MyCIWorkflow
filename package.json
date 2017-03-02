@@ -1,0 +1,14 @@
+{
+  "name": "myciworkflow",
+  "version": "1.0.0",
+  "description": "Trying out a cool CI workflow using Docker, CircleCI to deploy a NodeJS app to AWS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lars Tijhuis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.0"
+  }
+}
